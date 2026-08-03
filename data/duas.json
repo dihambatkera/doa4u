@@ -1,0 +1,368 @@
+[
+  {
+    "emotion_ms": "Risau",
+    "keywords": ["cemas", "gelisah", "bimbang", "gusar", "resah", "anxiety", "panik"],
+    "duas": [
+      {
+        "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ وَالْعَجْزِ وَالْكَسَلِ وَالْبُخْلِ وَالْجُبْنِ وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ",
+        "rumi": "Allahumma inni a'udzu bika minal-hammi wal-hazani, wal-'ajzi wal-kasali, wal-bukhli wal-jubni, wa dhala'id-dayni wa ghalabatir-rijal.",
+        "translation_ms": "Ya Allah, sesungguhnya aku berlindung kepada-Mu daripada kerisauan dan kesedihan, daripada kelemahan dan kemalasan, daripada sifat bakhil dan pengecut, serta daripada bebanan hutang dan penindasan manusia.",
+        "source": "Sahih al-Bukhari 6369"
+      },
+      {
+        "arabic": "لاَ إِلَهَ إِلاَّ اللَّهُ الْعَظِيمُ الْحَلِيمُ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لاَ إِلَهَ إِلاَّ اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ",
+        "rumi": "La ilaha illallahul-'Azhimul-Halim, la ilaha illallahu Rabbul-'Arshil-'Azhim, la ilaha illallahu Rabbus-samawati wa Rabbul-ardhi wa Rabbul-'Arshil-Karim.",
+        "translation_ms": "Tiada tuhan yang berhak disembah melainkan Allah Yang Maha Agung lagi Maha Penyantun. Tiada tuhan yang berhak disembah melainkan Allah, Tuhan Arasy yang agung. Tiada tuhan yang berhak disembah melainkan Allah, Tuhan langit dan bumi serta Tuhan Arasy yang mulia.",
+        "source": "Sahih al-Bukhari 6346"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Sedih",
+    "keywords": ["duka", "pilu", "sayu", "murung", "sebak", "hiba", "hancur hati"],
+    "duas": [
+      {
+        "arabic": "اللَّهُمَّ إِنِّي عَبْدُكَ ابْنُ عَبْدِكَ ابْنُ أَمَتِكَ، نَاصِيَتِي بِيَدِكَ، مَاضٍ فِيَّ حُكْمُكَ، عَدْلٌ فِيَّ قَضَاؤُكَ، أَسْأَلُكَ بِكُلِّ اسْمٍ هُوَ لَكَ سَمَّيْتَ بِهِ نَفْسَكَ أَوْ أَنْزَلْتَهُ فِي كِتَابِكَ أَوْ عَلَّمْتَهُ أَحَدًا مِنْ خَلْقِكَ أَوِ اسْتَأْثَرْتَ بِهِ فِي عِلْمِ الْغَيْبِ عِنْدَكَ، أَنْ تَجْعَلَ الْقُرْآنَ رَبِيعَ قَلْبِي وَنُورَ صَدْرِي وَجَلاَءَ حُزْنِي وَذَهَابَ هَمِّي",
+        "rumi": "Allahumma inni 'abduka, ibnu 'abdika, ibnu amatika, nasiyati biyadika, madhin fiyya hukmuka, 'adlun fiyya qadha'uka, as'aluka bikulli ismin huwa laka sammayta bihi nafsaka, aw anzaltahu fi kitabika, aw 'allamtahu ahadan min khalqika, awis-ta'tharta bihi fi 'ilmil-ghaybi 'indaka, an taj'alal-Qur'ana rabi'a qalbi, wa nura sadri, wa jala'a huzni, wa dzahaba hammi.",
+        "translation_ms": "Ya Allah, sesungguhnya aku hamba-Mu, anak hamba-Mu yang lelaki, anak hamba-Mu yang perempuan, ubun-ubunku di tangan-Mu, keputusan-Mu berlaku ke atasku, ketetapan-Mu adil bagiku. Aku memohon kepada-Mu dengan setiap nama yang Engkau miliki, yang Engkau namakan diri-Mu dengannya, atau yang Engkau turunkan dalam kitab-Mu, atau yang Engkau ajarkan kepada salah seorang daripada makhluk-Mu, atau yang Engkau simpan dalam ilmu ghaib di sisi-Mu, agar Engkau jadikan al-Quran penyejuk hatiku, cahaya dadaku, penghilang kesedihanku dan pelenyap kerisauanku.",
+        "source": "Musnad Ahmad 3712"
+      },
+      {
+        "arabic": "قَالَ إِنَّمَا أَشْكُو بَثِّي وَحُزْنِي إِلَى اللَّهِ وَأَعْلَمُ مِنَ اللَّهِ مَا لَا تَعْلَمُونَ",
+        "rumi": "Qala innama ashku bath-thi wa huzni ilallahi wa a'lamu minallahi ma la ta'lamun.",
+        "translation_ms": "Nabi Yaakub berkata: Sesungguhnya aku hanya mengadukan kesusahan dan kesedihanku kepada Allah, dan aku mengetahui daripada Allah apa yang kamu tidak mengetahuinya.",
+        "source": "Surah Yusuf: 86"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Gembira",
+    "keywords": ["senang", "riang", "bahagia", "suka", "ceria", "girang", "gembira"],
+    "duas": [
+      {
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ",
+        "rumi": "Alhamdulillahil-ladzi bi ni'matihi tatimmus-salihat.",
+        "translation_ms": "Segala puji bagi Allah yang dengan nikmat-Nya sempurnalah segala kebaikan.",
+        "source": "Sunan Ibn Majah 3803"
+      },
+      {
+        "arabic": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+        "rumi": "Rabbana hab lana min azwajina wa dhurriyatina qurrata a'yunin waj'alna lil-muttaqina imama.",
+        "translation_ms": "Wahai Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimipin bagi orang-orang yang bertakwa.",
+        "source": "Surah Al-Furqan: 74"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Marah",
+    "keywords": ["geram", "berang", "murka", "naik angin", "benggang", "panas hati", "emosi"],
+    "duas": [
+      {
+        "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+        "rumi": "A'udzu billahi minash-shaytanir-rajim.",
+        "translation_ms": "Aku berlindung dengan Allah daripada syaitan yang direjam.",
+        "source": "Sahih al-Bukhari 6115"
+      },
+      {
+        "arabic": "اللَّهُمَّ اغْفِرْ لِي ذَنْبِي ، وَأَذْهِبْ غَيْظَ قَلْبِي ، وَأَجِرْنِي مِنَ الشَّيْطَانِ",
+        "rumi": "Allahummaghfir li dzanbi, wa adzhib ghaizha qalbi, wa ajirni minash-shaytan.",
+        "translation_ms": "Ya Allah, ampunilah dosaku, hilangkanlah kemarahan di dalam hatiku, dan lindungilah aku daripada godaan syaitan.",
+        "source": "Amal al-Yawm wal-Laylah Ibn al-Sunni 457"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Bersyukur",
+    "keywords": ["terima kasih", "syukur", "nikmat", "hargai", "alhamdulillah"],
+    "duas": [
+      {
+        "arabic": "رَبِّ أَوْزِعْنِي أَنْ أَشْكُرَ نِعْمَتَكَ الَّتِي أَنْعَمْتَ عَلَيَّ وَعَلَى وَالِدَيَّ وَأَنْ أَعْمَلَ صَالِحًا تَرْضَاهُ وَأَدْخِلْنِي بِرَحْمَتِكَ فِي عِبَادِكَ الصَّالِحِينَ",
+        "rumi": "Rabbi awzi'ni an ashkura ni'matakal-lati an'amta 'alayya wa 'ala walidayya wa an a'mala salihan tardhahu wa adkhilni bi-rahmatika fi 'ibadikas-salihin.",
+        "translation_ms": "Wahai Tuhanku, ilhamkanlah daku untuk tetap bersyukur akan nikmat-Mu yang Engkau kurniakan kepadaku dan kepada ibu bapaku, dan supaya aku mengerjakan amal soleh yang Engkau redhai; dan masukkanlah daku dengan rahmat-Mu dalam kalangan hamba-hamba-Mu yang soleh.",
+        "source": "Surah An-Naml: 19"
+      },
+      {
+        "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+        "rumi": "Allahumma a'inni 'ala dhikrika wa shukrika wa husni 'ibadatik.",
+        "translation_ms": "Ya Allah, bantulah aku untuk sentiasa mengingat-Mu, bersyukur kepada-Mu, dan memperelokkan ibadah kepada-Mu.",
+        "source": "Sunan Abu Dawud 1522"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Takut",
+    "keywords": ["gerun", "gentar", "kederat", "ancaman", "ngeri", "fobia"],
+    "duas": [
+      {
+        "arabic": "حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ",
+        "rumi": "Hasbunallahu wa ni'mal-wakil.",
+        "translation_ms": "Cukuplah Allah menjadi Penolong kami dan Allah adalah sebaik-baik Pelindung.",
+        "source": "Surah Ali 'Imran: 173"
+      },
+      {
+        "arabic": "اللَّهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ",
+        "rumi": "Allahumma inna naj'aluka fi nuhurihim wa na'udzu bika min shururihim.",
+        "translation_ms": "Ya Allah, sesungguhnya kami menjadikan Engkau di leher-leher mereka (untuk menolak kejahatan mereka) dan kami berlindung kepada-Mu daripada kejahatan-kejahatan mereka.",
+        "source": "Sunan Abu Dawud 1537"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Keliru",
+    "keywords": ["was-was", "ragu", "dilema", "buntu", "bingung", "pilihan"],
+    "duas": [
+      {
+        "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي",
+        "rumi": "Rabbi ishrah li sadri wa yassir li amri wahlul 'uqdatan min lisani yafqahu qawli.",
+        "translation_ms": "Wahai Tuhanku, lapangkanlah bagiku dadaku, dan mudahkanlah bagiku urusanku, dan lepaskanlah simpulan daripada lidahku, supaya mereka faham perkataanku.",
+        "source": "Surah Taha: 25-28"
+      },
+      {
+        "arabic": "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ ، وَعَافِنِي فِيمَنْ عَافَيْتَ ، وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ",
+        "rumi": "Allahumma ihdini fi-man hadayt, wa 'afini fi-man 'afayt, wa tawallani fi-man tawallayt.",
+        "translation_ms": "Ya Allah, berilah petunjuk kepadaku bersama orang-orang yang telah Engkau beri petunjuk, berilah kesihatan kepadaku bersama orang yang telah Engkau beri kesihatan, dan pimpinlah aku bersama orang-orang yang telah Engkau pimpin.",
+        "source": "Sunan at-Tirmidhi 464"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Rindu",
+    "keywords": ["kasih", "sayang", "ingat", "memori", "cinta", "rindu seseorang"],
+    "duas": [
+      {
+        "arabic": "رَبِّ إِنِّي لِمَا أَنزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+        "rumi": "Rabbi inni lima anzalta ilayya min khayrin faqir.",
+        "translation_ms": "Wahai Tuhanku, sesungguhnya aku sangat memerlukan sebarang kebaikan yang Engkau turunkan kepadaku.",
+        "source": "Surah Al-Qasas: 24"
+      },
+      {
+        "arabic": "اللَّهُمَّ اجْعَلْ حُبَّكَ أَحَبَّ إِلَيَّ مِنْ نَفْسِي وَأَهْلِي وَمِنَ الْمَاءِ الْبَارِدِ",
+        "rumi": "Allahummaj'al hubbaka ahabba ilayya min nafsi wa ahli wa minal-ma'il-barid.",
+        "translation_ms": "Ya Allah, jadikanlah cintaku kepada-Mu lebih aku cintai daripada diriku sendiri, keluargaku, dan daripada air sejuk (ketika dahaga).",
+        "source": "Sunan at-Tirmidhi 3490"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Tenang",
+    "keywords": ["damai", "tenteram", "lapang", "sentosa", "stabil", "syahdu"],
+    "duas": [
+      {
+        "arabic": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+        "rumi": "Ala bidhikrillahi tatma'innul-qulub.",
+        "translation_ms": "Ketahuilah, dengan mengingati Allah hati akan menjadi tenang tenteram.",
+        "source": "Surah Ar-Ra'd: 28"
+      },
+      {
+        "arabic": "اللَّهُمَّ أَنْتَ السَّلاَمُ وَمِنْكَ السَّلاَمُ تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَامِ",
+        "rumi": "Allahumma antas-Salam wa minkas-Salam tabarakta ya Dzal-Jalali wal-Ikram.",
+        "translation_ms": "Ya Allah, Engkaulah As-Salam (Sejahtera) dan daripada-Engkaulah kesejahteraan. Maha Suci Engkau wahai Tuhan yang memiliki Keagungan dan Kemuliaan.",
+        "source": "Sahih Muslim 592"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Kecewa",
+    "keywords": ["hampa", "patah hati", "kecewa", "putus harapan", "tersakiti"],
+    "duas": [
+      {
+        "arabic": "قَدَرُ اللَّهِ وَمَا شَاءَ فَعَلَ",
+        "rumi": "Qadarullahi wa ma sha'a fa'al.",
+        "translation_ms": "Ini adalah takdir Allah, dan apa yang Dia kehendaki pasti Dia lakukan.",
+        "source": "Sahih Muslim 2664"
+      },
+      {
+        "arabic": "اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا",
+        "rumi": "Allahumma'jurni fi musibati wa akhlif li khayran minha.",
+        "translation_ms": "Ya Allah, berilah ganjaran pahala kepadaku dalam musibahku ini dan gantikanlah bagiku dengan yang lebih baik daripadanya.",
+        "source": "Sahih Muslim 918"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Cemburu",
+    "keywords": ["dengki", "iri", "iri hati", "benci", "sakit hati"],
+    "duas": [
+      {
+        "arabic": "رَبَّنَا اغْفِرْ لَنَا وَلإِخْوَانِنَا الَّذِينَ سَبَقُونَا بِالإِيمَانِ وَلا تَجْعَلْ فِي قُلُوبِنَا غِلاًّ لِّلَّذِينَ آمَنُوا رَبَّنَا إِنَّكَ رَؤُوفٌ رَّحِيمٌ",
+        "rumi": "Rabbanaghfir lana wa li-ikhwaninal-ladzina sabaquna bil-imani wa la taj'al fi qulubina ghillan lilladzina amanu Rabbana innaka Ra'ufun Rahim.",
+        "translation_ms": "Wahai Tuhan kami, ampunilah dosa kami dan dosa saudara-saudara kami yang telah beriman lebih dahulu daripada kami, dan janganlah Engkau jadikan dalam hati kami rasa dengki terhadap orang-orang yang beriman. Wahai Tuhan kami, sesungguhnya Engkau Maha Pelimpah Belas Kasihan lagi Maha Penyayang.",
+        "source": "Surah Al-Hashr: 10"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Bersalah",
+    "keywords": ["dosa", "penyesalan", "taubat", "khilaf", "insaf", "menyesal"],
+    "duas": [
+      {
+        "arabic": "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لاَ إِلَهَ إِلاَّ هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ",
+        "rumi": "Astaghfirullahal-'Azhim alladzi la ilaha illa Huwal-Hayyul-Qayyum wa atubu ilayh.",
+        "translation_ms": "Aku memohon ampun kepada Allah Yang Maha Agung, yang tiada tuhan berhak disembah melainkan Dia Yang Maha Hidup lagi Maha Berdiri Sendiri, dan aku bertaubat kepada-Nya.",
+        "source": "Sunan Abu Dawud 1517"
+      },
+      {
+        "arabic": "اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَاغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+        "rumi": "Allahumma anta Rabbi la ilaha illa anta khalaqtani wa ana 'abduka wa ana 'ala 'ahdika wa wa'dika mastata'tu, a'udzu bika min sharri ma sana'tu, abu'u laka bini'matika 'alayya wa abu'u bidzanbi faghfir li fa-innahu la yaghfirudh-dhunuba illa anta.",
+        "translation_ms": "Ya Allah, Engkaulah Tuhanku, tiada tuhan melainkan Engkau. Engkau yang menciptakan aku dan aku adalah hamba-Mu, aku menggenggam janji-Mu sekadarku. Aku berlindung kepada-Mu daripada kejahatan yang aku lakukan. Aku mengakui nikmat-Mu kepadaku dan aku mengakui dosaku, maka ampunilah aku, kerana tiada siapa yang dapat mengampunkan dosa melainkan Engkau.",
+        "source": "Sahih al-Bukhari 6306 (Sayyidul Istighfar)"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Lega",
+    "keywords": ["selamat", "ringan", "selesai", "terlepas", "syukur lega"],
+    "duas": [
+      {
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَذْهَبَ عَنَّا الْحَزَنَ إِنَّ رَبَّنَا لَغَفُورٌ شَكُورٌ",
+        "rumi": "Alhamdulillahil-ladzi adzhaba 'annal-hazan inna Rabbana la-Ghafurun Shakur.",
+        "translation_ms": "Segala puji bagi Allah yang telah menghilangkan kesedihan daripada kami. Sesungguhnya Tuhan kami Maha Pengampun lagi Maha Membalas Syukur.",
+        "source": "Surah Fatir: 34"
+      },
+      {
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي مِمَّا ابْتَلاَكَ بِهِ وَفَضَّلَنِي عَلَى كَثِيرٍ مِمَّنْ خَلَقَ تَفْضِيلاً",
+        "rumi": "Alhamdulillahil-ladzi 'afani mimma ibtalaka bihi wa faddalani 'ala kathirin mimman khalaqa tafdhila.",
+        "translation_ms": "Segala puji bagi Allah yang telah menyelamatkan daku daripada ujian yang ditimpakan-Nya kepadamu dan memberikan kelebihan kepadaku atas kebanyakan makhluk yang diciptakan-Nya.",
+        "source": "Sunan at-Tirmidhi 3431"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Rindu Kampung",
+    "keywords": ["halaman", "desa", "kampung", "perantauan", "musafir", "family"],
+    "duas": [
+      {
+        "arabic": "اللَّهُمَّ حَبِّبْ إِلَيْنَا الْمَدِينَةَ كَحُبِّنَا مَكَّةَ أَوْ أَشَدَّ",
+        "rumi": "Allahumma habbib ilaynal-Madinata ka-hubbina Makkata aw ashadd.",
+        "translation_ms": "Ya Allah, jadikanlah kami mencintai kota ini sebagaimana kami mencintai Makkah atau melebihi cintanya.",
+        "source": "Sahih al-Bukhari 1889"
+      },
+      {
+        "arabic": "رَّبِّ أَنزِلْنِي مُنزَلاً مُّبَارَكًا وَأَنتَ خَيْرُ الْمُنزِلِينَ",
+        "rumi": "Rabbi anzilni munzalan mubarakan wa anta khayrul-munzilin.",
+        "translation_ms": "Wahai Tuhanku, tempatkanlah aku di tempat kediaman yang diberkati, dan Engkaulah sebaik-baik yang memberi tempat kediaman.",
+        "source": "Surah Al-Mu'minun: 29"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Terharu",
+    "keywords": ["tersentuh", "sebak", "agung", "syahdu", "kagum"],
+    "duas": [
+      {
+        "arabic": "فَتَبَارَكَ اللَّهُ أَحْسَنُ الْخَالِقِينَ",
+        "rumi": "Fatabarakallahu ahsanul-khaliqin.",
+        "translation_ms": "Maka Maha Suci Allah, Pencipta yang paling baik.",
+        "source": "Surah Al-Mu'minun: 14"
+      },
+      {
+        "arabic": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَا نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+        "rumi": "Subhanallahi wa bihamdihi 'adada khalqihi, wa ridha nafsihi, wa zinata 'arshihi, wa midada kalimatih.",
+        "translation_ms": "Maha Suci Allah dan segala puji bagi-Nya, sebanyak bilangan ciptaan-Nya, menurut keredhaan diri-Nya, seberat timbangan Arasy-Nya, dan sebanyak tinta kata-kata-Nya.",
+        "source": "Sahih Muslim 2726"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Lemah",
+    "keywords": ["penat", "letih", "lesu", "tidak berdaya", "hilang tenaga"],
+    "duas": [
+      {
+        "arabic": "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ ، أَصْلِحْ لِي شَأْنِي كُلَّهُ ، وَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ",
+        "rumi": "Ya Hayyu Ya Qayyum bi-rahmatika astagheeth, aslih li sha'ni kullahu, wa la takilni ila nafsi tarfata 'ayn.",
+        "translation_ms": "Wahai Yang Maha Hidup, wahai Yang Maha Berdiri Sendiri, dengan rahmat-Mu aku memohon pertolongan. Perelokkanlah seluruh urusanku dan janganlah Engkau serahkan daku kepada diriku sendiri walau sekelip mata.",
+        "source": "Sunan at-Tirmidhi 3524"
+      },
+      {
+        "arabic": "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً وَأَنْتَ تَجْعَلُ الْحَزْنَ إِذَا شِئْتَ سَهْلاً",
+        "rumi": "Allahumma la sahla illa ma ja'altahu sahla, wa anta taj'alul-hazna idza shi'ta sahla.",
+        "translation_ms": "Ya Allah, tiada kemudahan melainkan apa yang Engkau jadikan mudah, dan Engkau menjadikan kesusahan itu mudah sekiranya Engkau menghendakinya.",
+        "source": "Sahih Ibn Hibban 974"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Ujian",
+    "keywords": ["musibah", "cabaran", "dugaan", "kesukaran", "penderitaan"],
+    "duas": [
+      {
+        "arabic": "لَّا إِلَٰهَ إِلَّا أَنتَ سُبْحَانَكَ إِنِّي كُنتُ مِنَ الظَّالِمِينَ",
+        "rumi": "La ilaha illa anta subhanaka inni kuntu minadh-dhalimin.",
+        "translation_ms": "Tiada tuhan melainkan Engkau, Maha Suci Engkau! Sesungguhnya aku adalah daripada orang-orang yang zalim.",
+        "source": "Surah Al-Anbiya: 87 (Doa Nabi Yunus)"
+      },
+      {
+        "arabic": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+        "rumi": "Inna lillahi wa inna ilayhi raji'un.",
+        "translation_ms": "Sesungguhnya kami adalah kepunyaan Allah dan kepada Allah jua kami kembali.",
+        "source": "Surah Al-Baqarah: 156"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Putus Asa",
+    "keywords": ["hilang arah", "kehilangan", "gelap", "hampa", "harapan"],
+    "duas": [
+      {
+        "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+        "rumi": "Ya Muqallibal-qulub thabbit qalbi 'ala dinik.",
+        "translation_ms": "Wahai Tuhan yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu.",
+        "source": "Sunan at-Tirmidhi 3522"
+      },
+      {
+        "arabic": "أَنِّي مَسَّنِيَ الضُّرُّ وَأَنتَ أَرْحَمُ الرَّاحِمِينَ",
+        "rumi": "Anni massaniyad-durru wa anta arhamur-rahimin.",
+        "translation_ms": "Sesungguhnya aku telah ditimpa penyakit/kesusahan, dan Engkau adalah Tuhan Yang Maha Penyayang di antara semua yang penyayang.",
+        "source": "Surah Al-Anbiya: 83 (Doa Nabi Ayyub)"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Melembutkan Hati",
+    "keywords": ["lembut hati", "melembutkan hati", "keras hati", "marah", "sejuk hati", "pujuk", "kelembutan", "penenang"],
+    "duas": [
+      {
+        "arabic": "اللَّهُمَّ لَيِّنْ لِي قَلْبَهُ كَمَا لَيَّنْتَ لِدَاوُدَ الْحَدِيدَ",
+        "rumi": "Allahumma laiyinli qalbahu, kama laiyinta li Daudal hadid.",
+        "translation_ms": "Ya Allah, lembutkanlah hatinya sepertimana Engkau melembutkan besi bagi Nabi Daud.",
+        "source": "Doa Nabi Daud A.S."
+      },
+      {
+        "arabic": "طه ۝ مَا أَنزَلْنَا عَلَيْكَ الْقُرْآنَ لِتَشْقَىٰ ۝ إِلَّا تَذْكِرَةً لِّمَن يَخْشَىٰ ۝ تَنزِيلًا مِّمَّنْ خَلَقَ الْأَرْضَ وَالسَّمَاوَاتِ الْعُلَى ۝ الرَّحْمَٰنُ عَلَى الْعَرْشِ اسْتَوَىٰ",
+        "rumi": "Taha. Ma anzalna 'alaykal-Qur'ana li-tashqa. Illa tadhkiratan liman yakhsha. Tanzilan mimman khalaqal-ardha was-samawatil-'ula. Ar-Rahmanu 'alal-'arshistawa.",
+        "translation_ms": "Ta Ha. Kami tidak menurunkan Al-Quran kepadamu supaya engkau menanggung kesusahan. Melainkan untuk menjadi peringatan bagi orang yang takut (melanggar perintah Allah). (Al-Quran) yang diturunkan daripada Tuhan yang menciptakan bumi dan langit yang tinggi. (Tuhan) Yang Maha Pemurah, yang bersemayam di atas 'Arash.",
+        "source": "Surah Taha: 1-5"
+      },
+      {
+        "arabic": "رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي",
+        "rumi": "Robbis rohlii shodrii, wa yassirlii amrii, wahlul 'uqdatam mil lisaani yafqohu qoulii.",
+        "translation_ms": "Ya Allah, lapangkanlah dadaku, mudahkanlah urusanku, dan lepaskanlah kekakuan dari lidahku supaya mereka mengerti perkataanku.",
+        "source": "Surah Taha: 25-28 (Doa Penenang)"
+      }
+    ]
+  },
+  {
+    "emotion_ms": "Istiqamah",
+    "keywords": ["istiqamah", "istiqomah", "tetap hati", "pendirian", "konsisten", "iman", "ketaatan", "ibadah"],
+    "duas": [
+      {
+        "arabic": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَى دِينِكَ",
+        "rumi": "Ya Muqallibal qulub, thabbit qolbi 'ala dinik.",
+        "translation_ms": "Wahai Dzat yang membolak-balikkan hati, tetapkanlah hatiku di atas agama-Mu.",
+        "source": "Sunan at-Tirmidhi 3522"
+      },
+      {
+        "arabic": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِن لَّدُنكَ رَحْمَةً ۚ إِنَّكَ أَنتَ الْوَهَّابُ",
+        "rumi": "Rabbana la tuzigh qulubana ba'da idz hadaytana wa hab lana min ladunka rahmatan innaka antal-Wahhab.",
+        "translation_ms": "Wahai Tuhan kami, janganlah Engkau palingkan hati kami selepas Engkau memberi petunjuk kepada kami, dan kurniakanlah kepada kami rahmat dari sisi-Mu; sesungguhnya Engkau Maha Pemberi Kurnia.",
+        "source": "Surah Ali 'Imran: 8"
+      },
+      {
+        "arabic": "اللَّهُمَّ أَعِنِّي عَلَى ذِكْرِكَ وَشُكْرِكَ وَحُسْنِ عِبَادَتِكَ",
+        "rumi": "Allahumma a'inni 'ala dhikrika wa shukrika wa husni 'ibadatik.",
+        "translation_ms": "Ya Allah, bantulah aku untuk sentiasa mengingati-Mu, bersyukur kepada-Mu, dan memperelokkan ibadah kepada-Mu.",
+        "source": "Sunan Abu Dawud 1522"
+      }
+    ]
+  }
+]

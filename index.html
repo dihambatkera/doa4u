@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="doa4u — Padanan emosi dan perasaan kepada doa-doa Islamic yang sahih beserta ejaan rumi dan terjemahan Bahasa Melayu.">
+  <title>doa4u — Doa Mengikut Perasaan Anda</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- App Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Canvas Starfield (Dark Mode background animation) -->
+  <canvas id="starfield-canvas"></canvas>
+
+  <!-- Confetti Canvas (Celebratory pixel bursts) -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- App Container -->
+  <div class="app-container">
+    
+    <!-- Site Header -->
+    <header class="site-header">
+      <a href="#/" class="brand-logo" id="brand-logo-btn">
+        <i class="fa-solid fa-fire-flame-curved"></i>
+        <span class="brand-text">doa4u</span>
+      </a>
+      <div class="nav-actions">
+        <a href="#/directory" class="icon-btn" aria-label="Direktori Perasaan" title="Direktori Perasaan">
+          <i class="fa-solid fa-compass"></i>
+        </a>
+        <button id="theme-toggle" class="icon-btn" aria-label="Tukar Tema Siang/Malam" title="Tukar Tema">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN VIEWS -->
+    <main>
+
+      <!-- 1. HOME VIEW -->
+      <section id="home-view" class="view-section active">
+        <div class="home-hero">
+          <span class="hero-subtitle"><i class="fa-solid fa-star"></i> Padanan Doa Islamic</span>
+          <h1 class="hero-title">Apa perasaan anda sekarang?</h1>
+          <p class="hero-desc">Pilih perasaan atau emosi yang sedang anda alami untuk mendapatkan doa sahih beserta ejaan rumi & terjemahan Bahasa Melayu.</p>
+        </div>
+
+        <div class="picker-container">
+          <span class="picker-label"><i class="fa-solid fa-list-ul"></i> Pilih Dari Senarai:</span>
+          
+          <!-- Dropdown Selector -->
+          <div class="dropdown-wrapper">
+            <select id="emotion-select" class="pixel-select" aria-label="Pilih emosi anda">
+              <option value="">-- Pilih Perasaan Anda --</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+
+          <!-- Quick Pick Chips -->
+          <span class="picker-label"><i class="fa-solid fa-bolt"></i> Pilihan Pantas:</span>
+          <div id="chips-grid" class="chips-grid"></div>
+
+          <!-- Primary CTA -->
+          <button id="find-doa-btn" class="cta-button" type="button">
+            <i class="fa-solid fa-fire-flame-curved"></i> Dapatkan Doa <i class="fa-solid fa-fire-flame-curved"></i>
+          </button>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#/directory" id="show-all-link" class="show-all-link">
+            <i class="fa-solid fa-compass"></i> Lihat Semua Perasaan (18) &rarr;
+          </a>
+        </div>
+      </section>
+
+      <!-- 2. RESULT VIEW -->
+      <section id="result-view" class="view-section">
+        <div class="result-header">
+          <button id="back-to-home-btn" class="back-btn" type="button">
+            <i class="fa-solid fa-arrow-left"></i> Kembali
+          </button>
+          <div id="result-emotion-badge" class="emotion-badge">
+            <i class="fa-solid fa-moon"></i> Perasaan
+          </div>
+        </div>
+
+        <!-- Pixel Du'aa Card -->
+        <article id="result-card" class="pixel-card tilt-card">
+          <div class="pixel-card-corner top-left"></div>
+          <div class="pixel-card-corner top-right"></div>
+          <div class="pixel-card-corner bottom-left"></div>
+          <div class="pixel-card-corner bottom-right"></div>
+
+          <i class="fa-solid fa-moon card-motif-icon"></i>
+
+          <div class="dua-content">
+            <!-- Arabic Text -->
+            <div class="arabic-container">
+              <p id="dua-arabic" class="arabic-text" lang="ar" dir="rtl"></p>
+            </div>
+
+            <!-- Rumi Transliteration -->
+            <p id="dua-rumi" class="rumi-text"></p>
+
+            <!-- Malay Translation -->
+            <p id="dua-translation" class="translation-text"></p>
+
+            <!-- Source Reference -->
+            <div id="dua-source" class="source-citation">
+              <i class="fa-solid fa-book-bookmark"></i> Sumber
+            </div>
+          </div>
+        </article>
+
+        <!-- Action Row -->
+        <div class="result-actions">
+          <button id="cycle-dua-btn" class="action-btn secondary" type="button">
+            <i class="fa-solid fa-arrows-rotate"></i> Doa Lain
+          </button>
+          <button id="copy-dua-btn" class="action-btn" type="button">
+            <i class="fa-solid fa-copy"></i> Salin Teks
+          </button>
+          <button id="share-dua-btn" class="action-btn" type="button">
+            <i class="fa-solid fa-share-nodes"></i> Kongsi
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. DIRECTORY VIEW -->
+      <section id="directory-view" class="view-section">
+        <div class="directory-header">
+          <button class="back-btn" type="button" onclick="window.location.hash='#/'">
+            <i class="fa-solid fa-arrow-left"></i> Utama
+          </button>
+          <h2 class="directory-title" style="margin-top: 1rem;">Direktori Perasaan</h2>
+        </div>
+
+        <div class="search-wrapper">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="directory-search" class="search-input" placeholder="Cari emosi atau kata kunci (contoh: risau, cemas, duka)..." aria-label="Cari emosi">
+        </div>
+
+        <div id="directory-grid" class="directory-grid"></div>
+      </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <p class="footer-text">
+        <span>doa4u</span> — Dihasilkan dengan ihsan & ilmu.<br>
+        Semua doa dipetik daripada al-Quran dan kitab Hadith sahih.
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- 8-BIT LOADING OVERLAY -->
+  <div id="loading-overlay" class="loading-overlay" aria-live="polite">
+    <i class="fa-solid fa-fire-flame-curved loading-candle"></i>
+    <span class="loading-text">Mencari Doa...</span>
+    <div class="loading-bar-container">
+      <div id="loading-bar-fill" class="loading-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notification" class="toast-container" aria-live="assertive">
+    <i class="fa-solid fa-check"></i>
+    <span>Mesej pemberitahuan</span>
+  </div>
+
+  <!-- APP SCRIPTS -->
+  <script src="js/starfield.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
