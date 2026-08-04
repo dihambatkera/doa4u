@@ -293,42 +293,187 @@ html[data-theme="light"] #starfield-canvas {
   text-transform: uppercase;
 }
 
-/* Dropdown styling */
-.dropdown-wrapper {
+/* Custom Searchable Select (Select2 style - 8-Bit Pixel Theme) */
+.custom-select-container {
   position: relative;
   margin-bottom: 1.5rem;
+  user-select: none;
 }
 
-.pixel-select {
+.custom-select-trigger {
   width: 100%;
-  appearance: none;
-  -webkit-appearance: none;
   background-color: var(--bg-panel);
   color: var(--text-primary);
   border: 3px solid var(--accent-gold);
-  padding: 0.9rem 2.5rem 0.9rem 1.2rem;
+  padding: 0.9rem 1.2rem;
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   box-shadow: var(--shadow-pixel);
   outline: none;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.custom-select-container.open .custom-select-trigger,
+.custom-select-trigger:focus {
+  border-color: var(--accent-gold-hover);
+  box-shadow: 0 0 0 3px var(--accent-gold-glow), var(--shadow-pixel);
+  background-color: var(--bg-panel-hover);
+}
+
+.custom-select-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+}
+
+.custom-select-trigger .select-arrow {
+  color: var(--accent-gold);
+  transition: transform 0.2s ease;
+  margin-left: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.custom-select-container.open .select-arrow {
+  transform: rotate(180deg);
+}
+
+.custom-select-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: var(--bg-panel);
+  border: 3px solid var(--accent-gold);
+  box-shadow: var(--shadow-pixel-lg);
+  padding: 0.6rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: dropdownSlideDown 0.15s ease-out;
+}
+
+.custom-select-container.open .custom-select-dropdown {
+  display: flex;
+}
+
+@keyframes dropdownSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-select-search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.custom-select-search-wrapper .custom-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  color: var(--accent-gold);
+  font-size: 0.85rem;
+  pointer-events: none;
+}
+
+.custom-select-search {
+  width: 100%;
+  background: var(--bg-primary);
+  border: 2px solid var(--bg-panel-border);
+  color: var(--text-primary);
+  padding: 0.6rem 0.75rem 0.6rem 2.2rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.pixel-select:focus {
-  border-color: var(--accent-gold-hover);
-  box-shadow: 0 0 0 3px var(--accent-gold-glow), var(--shadow-pixel);
+.custom-select-search:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 2px var(--accent-gold-glow);
 }
 
-.select-arrow {
-  position: absolute;
-  right: 1.2rem;
-  top: 50%;
-  transform: translateY(-50%);
+.custom-select-options {
+  list-style: none;
+  max-height: 220px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Scrollbar styling for options */
+.custom-select-options::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-select-options::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+.custom-select-options::-webkit-scrollbar-thumb {
+  background: var(--accent-gold);
+}
+
+.custom-option {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.custom-option:hover,
+.custom-option.highlighted {
+  background-color: var(--bg-panel-hover);
   color: var(--accent-gold);
-  pointer-events: none;
-  font-size: 1rem;
+}
+
+.custom-option.selected {
+  background-color: var(--badge-bg);
+  color: var(--accent-gold);
+  border-left: 3px solid var(--accent-gold);
+}
+
+.custom-option-empty {
+  padding: 0.85rem;
+  font-family: var(--font-pixel);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.visually-hidden,
+.pixel-select {
+  display: none !important;
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 /* Quick Pick Chips Grid */
@@ -794,8 +939,18 @@ html[data-theme="light"] .loading-overlay {
   line-height: 1.8;
 }
 
-.footer-text span {
+.developer-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.developer-link:hover {
   color: var(--accent-gold);
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* --- KEYFRAME ANIMATIONS --- */
