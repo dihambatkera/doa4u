@@ -57,29 +57,22 @@
           
           <!-- Custom Searchable Select Box (Select2 Style) -->
           <div class="custom-select-container" id="custom-select-container">
-            <!-- <button type="button" class="custom-select-trigger" id="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <button type="button" class="custom-select-trigger" id="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
               <span class="custom-select-label" id="custom-select-label">-- Pilih Perasaan Anda --</span>
               <i class="fa-solid fa-chevron-down select-arrow"></i>
-            </button> -->
-            
+            </button>
             <div class="custom-select-dropdown" id="custom-select-dropdown" hidden>
               <div class="custom-select-search-wrapper">
                 <i class="fa-solid fa-magnifying-glass custom-search-icon"></i>
                 <input type="text" id="custom-select-search" class="custom-select-search" placeholder="Cari perasaan (contoh: sedih, risau)..." autocomplete="off" aria-label="Cari perasaan">
               </div>
-              
-              <br>
-              <br>
-              
               <ul class="custom-select-options" id="custom-select-options" role="listbox">
               </ul>
             </div>
-            <select id="emotion-select" class="pixel-select visually-hidden" aria-label="Pilih emosi anda" tabindex="-1">
+            <select id="emotion-select" class="pixel-select visually-hidden" aria-label="Pilih emosi anda" tabindex="-1" style="display: none;" hidden>
               <option value="">-- Pilih Perasaan Anda --</option>
             </select>
           </div>
-            
-              <br>
 
           <!-- Quick Pick Chips -->
           <span class="picker-label"><i class="fa-solid fa-bolt"></i> Pilihan Pantas:</span>
