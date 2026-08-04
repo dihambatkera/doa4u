@@ -149,9 +149,9 @@ class UIManager {
     }, 2800);
   }
 
-  // --- Card 3D Tilt Effect (Disabled - Cards remain completely static) ---
+  // --- Card 3D Tilt Effect (Disabled for static card) ---
   initTiltEffect() {
-    // Disabled cursor-tracking motion. Cards remain static.
+    // Cursor-tracking tilt effect removed to keep card static
   }
 }
 
