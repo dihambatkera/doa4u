@@ -149,34 +149,9 @@ class UIManager {
     }, 2800);
   }
 
-  // --- Card 3D Tilt Effect ---
+  // --- Card 3D Tilt Effect (Disabled - Cards remain completely static) ---
   initTiltEffect() {
-    if (this.reducedMotion) return;
-
-    document.addEventListener('mousemove', (e) => {
-      const cards = document.querySelectorAll('.tilt-card');
-      cards.forEach((card) => {
-        const rect = card.getBoundingClientRect();
-        const cardX = rect.left + rect.width / 2;
-        const cardY = rect.top + rect.height / 2;
-
-        const deltaX = (e.clientX - cardX) / (rect.width / 2);
-        const deltaY = (e.clientY - cardY) / (rect.height / 2);
-
-        // Limit tilt to 6 degrees max
-        const tiltX = (deltaY * -4).toFixed(2);
-        const tiltY = (deltaX * 4).toFixed(2);
-
-        card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-      });
-    });
-
-    document.addEventListener('mouseleave', () => {
-      const cards = document.querySelectorAll('.tilt-card');
-      cards.forEach((card) => {
-        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
-      });
-    });
+    // Disabled cursor-tracking motion. Cards remain static.
   }
 }
 

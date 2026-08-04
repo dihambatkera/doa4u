@@ -61,27 +61,14 @@ class AppController {
 
   // --- HOME VIEW SETUP ---
   setupHomeView() {
-    const selectEl = document.getElementById('emotion-select');
     const chipsGrid = document.getElementById('chips-grid');
     const findBtn = document.getElementById('find-doa-btn');
     const showAllLink = document.getElementById('show-all-link');
 
     const emotions = window.DataServiceInstance.getAllEmotions();
 
-    // Populate Dropdown
-    if (selectEl) {
-      selectEl.innerHTML = '<option value="">-- Pilih Perasaan Anda --</option>';
-      emotions.forEach(item => {
-        const option = document.createElement('option');
-        option.value = window.DataServiceInstance.slugify(item.emotion_ms);
-        option.textContent = item.emotion_ms;
-        selectEl.appendChild(option);
-      });
-
-      selectEl.addEventListener('change', (e) => {
-        this.selectedDropdownValue = e.target.value;
-      });
-    }
+    // Setup Custom Searchable Select (Select2 style)
+    this.setupCustomSelect(emotions);
 
     // Populate Quick Pick Chips (Top 12 common emotions)
     if (chipsGrid) {
@@ -118,6 +105,187 @@ class AppController {
         window.location.hash = '#/directory';
       });
     }
+  }
+
+  setupCustomSelect(emotions) {
+    const container = document.getElementById('custom-select-container');
+    const trigger = document.getElementById('custom-select-trigger');
+    const label = document.getElementById('custom-select-label');
+    const dropdown = document.getElementById('custom-select-dropdown');
+    const searchInput = document.getElementById('custom-select-search');
+    const optionsList = document.getElementById('custom-select-options');
+    const selectEl = document.getElementById('emotion-select');
+
+    if (!container || !trigger || !dropdown || !optionsList) return;
+
+    let highlightedIndex = -1;
+
+    // Populate native select for fallback/accessibility
+    if (selectEl) {
+      selectEl.innerHTML = '<option value="">-- Pilih Perasaan Anda --</option>';
+      emotions.forEach(item => {
+        const option = document.createElement('option');
+        option.value = window.DataServiceInstance.slugify(item.emotion_ms);
+        option.textContent = item.emotion_ms;
+        selectEl.appendChild(option);
+      });
+    }
+
+    const renderOptions = (filterText = '') => {
+      optionsList.innerHTML = '';
+      const query = filterText.toLowerCase().trim();
+
+      // Default Option
+      if (!query) {
+        const defaultLi = document.createElement('li');
+        defaultLi.className = 'custom-option' + (this.selectedDropdownValue === '' ? ' selected' : '');
+        defaultLi.setAttribute('role', 'option');
+        defaultLi.dataset.value = '';
+        defaultLi.innerHTML = `<span>-- Pilih Perasaan Anda --</span>${this.selectedDropdownValue === '' ? '<i class="fa-solid fa-check"></i>' : ''}`;
+        defaultLi.addEventListener('click', () => selectOption('', '-- Pilih Perasaan Anda --'));
+        optionsList.appendChild(defaultLi);
+      }
+
+      const filtered = emotions.filter(item => {
+        if (!query) return true;
+        const nameMatch = item.emotion_ms.toLowerCase().includes(query);
+        const keywordMatch = item.keywords && item.keywords.some(k => k.toLowerCase().includes(query));
+        return nameMatch || keywordMatch;
+      });
+
+      if (filtered.length === 0) {
+        const emptyLi = document.createElement('li');
+        emptyLi.className = 'custom-option-empty';
+        emptyLi.textContent = 'Tiada perasaan dijumpai';
+        optionsList.appendChild(emptyLi);
+        highlightedIndex = -1;
+        return;
+      }
+
+      filtered.forEach((item) => {
+        const slug = window.DataServiceInstance.slugify(item.emotion_ms);
+        const isSelected = this.selectedDropdownValue === slug;
+        const li = document.createElement('li');
+        li.className = 'custom-option' + (isSelected ? ' selected' : '');
+        li.setAttribute('role', 'option');
+        li.dataset.value = slug;
+        
+        // Match indicator if matched via keyword
+        const isNameMatch = item.emotion_ms.toLowerCase().includes(query);
+        let subtitleText = '';
+        if (query && !isNameMatch && item.keywords) {
+          const matchedKw = item.keywords.find(k => k.toLowerCase().includes(query));
+          if (matchedKw) subtitleText = `<span style="font-size:0.8rem; opacity:0.7; margin-left:6px;">(${matchedKw})</span>`;
+        }
+
+        li.innerHTML = `
+          <span><i class="fa-solid fa-heart" style="font-size:0.75rem; margin-right:8px; color:var(--accent-gold);"></i> ${item.emotion_ms}${subtitleText}</span>
+          ${isSelected ? '<i class="fa-solid fa-check"></i>' : ''}
+        `;
+
+        li.addEventListener('click', () => selectOption(slug, item.emotion_ms));
+        optionsList.appendChild(li);
+      });
+
+      highlightedIndex = -1;
+    };
+
+    const openDropdown = () => {
+      container.classList.add('open');
+      dropdown.removeAttribute('hidden');
+      trigger.setAttribute('aria-expanded', 'true');
+      if (searchInput) {
+        searchInput.value = '';
+        renderOptions('');
+        searchInput.focus();
+      }
+    };
+
+    const closeDropdown = () => {
+      container.classList.remove('open');
+      dropdown.setAttribute('hidden', '');
+      trigger.setAttribute('aria-expanded', 'false');
+      highlightedIndex = -1;
+    };
+
+    const selectOption = (val, text) => {
+      this.selectedDropdownValue = val;
+      if (label) label.textContent = text;
+      if (selectEl) selectEl.value = val;
+      closeDropdown();
+      trigger.focus();
+    };
+
+    // Toggle dropdown on trigger click
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      if (container.classList.contains('open')) {
+        closeDropdown();
+      } else {
+        openDropdown();
+      }
+    });
+
+    // Keyboard support for trigger
+    trigger.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown' || e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openDropdown();
+      }
+    });
+
+    // Search input filter
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        renderOptions(e.target.value);
+      });
+
+      searchInput.addEventListener('keydown', (e) => {
+        const items = optionsList.querySelectorAll('.custom-option');
+        if (items.length === 0) return;
+
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          highlightedIndex = (highlightedIndex + 1) % items.length;
+          updateHighlight(items);
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          highlightedIndex = (highlightedIndex - 1 + items.length) % items.length;
+          updateHighlight(items);
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          if (highlightedIndex >= 0 && items[highlightedIndex]) {
+            items[highlightedIndex].click();
+          } else if (items.length > 0) {
+            items[0].click();
+          }
+        } else if (e.key === 'Escape') {
+          closeDropdown();
+          trigger.focus();
+        }
+      });
+    }
+
+    const updateHighlight = (items) => {
+      items.forEach((item, idx) => {
+        if (idx === highlightedIndex) {
+          item.classList.add('highlighted');
+          item.scrollIntoView({ block: 'nearest' });
+        } else {
+          item.classList.remove('highlighted');
+        }
+      });
+    };
+
+    // Click outside handler
+    document.addEventListener('click', (e) => {
+      if (!container.contains(e.target)) {
+        closeDropdown();
+      }
+    });
+
+    // Initial render
+    renderOptions('');
   }
 
   showHomeView() {
