@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="doa4u — Padanan emosi dan perasaan kepada doa-doa Islamic yang sahih beserta ejaan rumi dan terjemahan Bahasa Melayu.">
-  <title>doa4u — Doa Mengikut Perasaan Anda</title>
+  <title>doa4u</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,7 @@
     <!-- Site Header -->
     <header class="site-header">
       <a href="#/" class="brand-logo" id="brand-logo-btn">
-        <i class="fa-solid fa-fire-flame-curved"></i>
+        <i class="fa-solid fa-hands-praying"></i>
         <span class="brand-text">doa4u</span>
       </a>
       <div class="nav-actions">
@@ -49,7 +49,6 @@
       <!-- 1. HOME VIEW -->
       <section id="home-view" class="view-section active">
         <div class="home-hero">
-          <span class="hero-subtitle"><i class="fa-solid fa-star"></i> Padanan Doa Islamic</span>
           <h1 class="hero-title">Apa perasaan anda sekarang?</h1>
           <p class="hero-desc">Pilih perasaan atau emosi yang sedang anda alami untuk mendapatkan doa sahih beserta ejaan rumi & terjemahan Bahasa Melayu.</p>
         </div>
@@ -57,12 +56,23 @@
         <div class="picker-container">
           <span class="picker-label"><i class="fa-solid fa-list-ul"></i> Pilih Dari Senarai:</span>
           
-          <!-- Dropdown Selector -->
-          <div class="dropdown-wrapper">
-            <select id="emotion-select" class="pixel-select" aria-label="Pilih emosi anda">
+          <!-- Custom Searchable Select Box (Select2 Style) -->
+          <div class="custom-select-container" id="custom-select-container">
+            <button type="button" class="custom-select-trigger" id="custom-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+              <span class="custom-select-label" id="custom-select-label">-- Pilih Perasaan Anda --</span>
+              <i class="fa-solid fa-chevron-down select-arrow"></i>
+            </button>
+            <div class="custom-select-dropdown" id="custom-select-dropdown" hidden>
+              <div class="custom-select-search-wrapper">
+                <i class="fa-solid fa-magnifying-glass custom-search-icon"></i>
+                <input type="text" id="custom-select-search" class="custom-select-search" placeholder="Cari perasaan (contoh: sedih, risau)..." autocomplete="off" aria-label="Cari perasaan">
+              </div>
+              <ul class="custom-select-options" id="custom-select-options" role="listbox">
+              </ul>
+            </div>
+            <select id="emotion-select" class="pixel-select visually-hidden" aria-label="Pilih emosi anda" tabindex="-1">
               <option value="">-- Pilih Perasaan Anda --</option>
             </select>
-            <i class="fa-solid fa-chevron-down select-arrow"></i>
           </div>
 
           <!-- Quick Pick Chips -->
@@ -71,7 +81,7 @@
 
           <!-- Primary CTA -->
           <button id="find-doa-btn" class="cta-button" type="button">
-            <i class="fa-solid fa-fire-flame-curved"></i> Dapatkan Doa <i class="fa-solid fa-fire-flame-curved"></i>
+            <i class="fa-solid fa-hands-praying"></i> Dapatkan Doa <i class="fa-solid fa-hands-praying"></i>
           </button>
         </div>
 
@@ -166,8 +176,8 @@
 
   <!-- 8-BIT LOADING OVERLAY -->
   <div id="loading-overlay" class="loading-overlay" aria-live="polite">
-    <i class="fa-solid fa-fire-flame-curved loading-candle"></i>
-    <span class="loading-text">Mencari Doa...</span>
+    <i class="fa-solid fa-hands-praying loading-candle"></i>
+    <span class="loading-text">Loading</span>
     <div class="loading-bar-container">
       <div id="loading-bar-fill" class="loading-bar-fill"></div>
     </div>
